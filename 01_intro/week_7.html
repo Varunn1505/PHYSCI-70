@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>PHYSCI 70: Intro to Digital Fabrication </title>
-  <meta charset="utf-8">
+
+<title>PHYS-S12: Intro to Digital Fabrication </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
-</head>
+
+<nav style="background-color: #ffffff; color: #2a2a2a; padding-bottom:0px; padding-top:0px;" class="navbar navbar-expand-sm navbar-light bg-light">
+  <div style="align-items: left; justify-content:left; background-color: #ffffff; color: #2a2a2a;" class="container-fluid">
+    <h3 style="margin: 15px; color: #2a2a2a; font-family: sans-serif;"> PHYS-S12: Intro to Digital Fabrication</h3>
+    <div class="navbar-nav">
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="../index.html"> &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160  Home</a></h4>
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="./index.html">About</a></h4>
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="final_project.html">Final Project</a></h4>
+    </div>
+  </div>
+</nav>
+<hr>
 <body>
+<h2>Electronic Output Devices</h2>
 
-<xmp theme="journal" style="display:none;">
+<p>This week our assignment was to create a contraption using an electronic output device we had not used before. To start with, I decided to work on the LED strip but after burning and cutting my finger, I switched to the piezo buzzer</p>
 
-<p>For the next project I decided to build a helicopter after a lot of idea changes and a lot of bothering suvin</p>
+<p>I had a few good ideas for songs but a lot of other people had similar ideas, since I wanted to be unique, I found the sheet music for a song online at <a href="url">https://pianoletternotes.blogspot.com/2019/02/wii-shop-channel-music.html</a></p>
 
-<p>I built the helicopter in a rush but I'm quite proud of it</p>
+<img src = "ntoes.PNG">
 
-<p>I initially cut it out of a wooden slab but then it just looked like a deformed oval</p>
+<p>The song I decided on was the wii shop theme song, it was a song that made my childhood as I used to play on the wii and I still like this song to this day, it has a happy melody</p>
 
-<p>I later decided to 2D print the helicopter as I thought it would look much better and I am a lot happier than the deformed ellipse</p>
+<img src = "notes.PNG">
 
-<p>For the main propeller, I decided to make it myself and cut it out of wood as i felt that 2D printing everything would be far too easy</p>
+<p>I also followed the assignments parameters by using classes to code in a button</p>
 
-<p>The helicopter finally worked so now I had to move on to arduino</p>
+<img src = "clsss.PNG">
 
-<p>I initially had a lot of problems with the arduino as the port was not working with my laptop but Professor Melenbrink fixed it and now I was ready to build my arduino circuit</p>
+<p>I started coding by creating constant variables for each and every note I needed just like so</p>
 
-<p>I had big ideas on how to implement the arduino and breadboard into my helicopter but most of that ended up not working</p>
+<img src = "notes.PNG">
 
-<p>After a lot of work, I created a start/stop button for my helicopter which just turns off and turns on the helicopter with each press of the button</p>
-[GO BACK](../index.html).
+<p>I used the myTone function from the professor as it had been advised to use since the tone() function did not work 100% of the time</p>
 
+<img src="mytone.PNG">
 
+<p>After a lot of testing and debugging, I ended up with the wii shop theme song coded  with 4th and 5th octave notes</p>
+<video width="960" height="720" controls>
+  <source src="./IMG_0975.mp4" type="video/mp4">
+</video>
 
-</xmp>
+<p>I also connected my project to the ossiloscope as instructed and from the following data points I determined that my output device did not operate on a fixed clock but it did operate at 140 bpm but it was not constant, the highest speed was 826.485 and it ranged from this frequency to 1.01797</p>
+
+<video width="960" height="720" controls>
+  <source src="./IMG_0974.mp4" type="video/mp4">
+</video>
+
 </body>
-
-<script src="https://strapdownjs.com/v/0.2/strapdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
 
 </html>

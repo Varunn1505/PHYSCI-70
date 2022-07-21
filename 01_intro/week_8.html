@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>PHYS-S12: Intro to Digital Fabrication </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+
+<nav style="background-color: #ffffff; color: #2a2a2a; padding-bottom:0px; padding-top:0px;" class="navbar navbar-expand-sm navbar-light bg-light">
+  <div style="align-items: left; justify-content:left; background-color: #ffffff; color: #2a2a2a;" class="container-fluid">
+    <h3 style="margin: 15px; color: #2a2a2a; font-family: sans-serif;"> PHYS-S12: Intro to Digital Fabrication</h3>
+    <div class="navbar-nav">
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="../index.html"> &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160  Home</a></h4>
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="./index.html">About</a></h4>
+      <h4><a style="color:black; font-family:sans-serif;" class="nav-link" href="final_project.html">Final Project</a></h4>
+    </div>
+  </div>
+</nav>
+<hr>
+<body>
+<h2>Electronic Output Devices</h2>
+
+<p>This week, I teamed up with Jonathan to make a temperature regulator</p>
+<p>My first idea, which did not work out so well was to make a controller that could control my computer</p>
+
+<p>To start out, I decided to use the example provided on arduino and Professor Melenbrink's website to turn on and off an LED and that went smoothly without any errors</p>
+
+<p>After that, I spent a long time trying to reuse similar code to control a motor and that did not end up too well</p>
+
+<p>After I had a bit of experience with ESP32, I was ready to work on the project with Jonathan, we used a thermistor that he had built earlier to input live temperatures, but we ran into a problem with this</p>
+
+<p>It turns out that the ESP only has a select number of analog pins which we could connect the thermistor to, and it took a long time to figure this out</p>
+
+<p>Now that we had connected it to the analog pin, it still did not work properly as the reading came out really weird, to solve this we spent a while calibrating the thermistor so that we could accurately use it to capture the temperature in degrees celsius</p>
+
+<p>Now that we had a chunk of work done, we used the wiring and code from the LED I had used before so that it could light up on reaching the right temperature</p>
+
+<p>All that was left was to get the input from the user so that we could regulate to the right temperature</p>
+
+<p>For this, we followed a random nerd tutorial to get the input and the code is below</p>
+
+<p>Although this machine still does not regulate properly it's a lot of progress</p>
+</body>
+
+</html>

@@ -17,15 +17,25 @@
 </nav>
 <hr>
 
+<style>
+  h1 {text-align: center;}
+  h2 {text-align: center;}
+  h3 {text-align: center;}
+  h4 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+</style>
 
 <body>
 
 
 
       <h1>The Final Project</h1>
+
+      <h2>The First Idea:</h2>
     
-      <img src ="./IMG_0966.png">
-      <img src ="./IMG_0967.png">
+      <img src ="./IMG_0966.png" class="center">
+      <img src ="./IMG_0967.png" class="center">
     
       <p>My plan for the final project is two machines put together. The first one is a device that alt+tabs on my computer when my room door opens. I have 3 options designed as showcased above</p>
 
@@ -37,25 +47,78 @@
 
       <p>The linear actuator design I looked at is 12"(11.9) inches long and can extend to 4 inches using 12V and 150lb of force</p>
 
-      <img src ="./IMG_0969.png">
+      <img src ="./IMG_0969.png" class="center">
 
       <p>This linear actuator can push the door to 50* and momentum should take care of the rest according to my calculations</p>
 
-      <img src ="./IMG_0970.png">
+      <img src ="./IMG_0970.png" class="center">
 
       <p>This video documents the basis of a linear actuator which is the main part I will use to create my door closer<a href="url">https://www.youtube.com/watch?v=e9V2GY1WaRU</a></p>
 
-      <p>Parts List:</p>
-      <ol>
-        <li>Linear Actuator</li>
-        <li>2 Bluetooth/Wi-Fi enabled microchip(ESP32)(1 additional as I already possess one)</li>
-        <li>Hall Sensor</li>
-        <li>PLA for the 3D printer</li>
-        <li>Plywood</li>
-        <li>Acrylic</li>
-        <li>Screws</li>
-        <li>Batteries</li>
-      </ol>
-  </body>
+      <h3><b>The Final Idea</b></h3>
+
+      <p>After a lot of problems with my first idea, my second and final idea was something similar but better, this project is an alarm system with a keycard</p>
+
+      <p>The alarm system is a silent one along with a hidden camera to get footage and upload it so that the police can find this said burglar</p>
+
+      <p>My inspiration for this project happened during summer school when I left my computer open and went to drink water, and when I returned, someone had tampered with it and therefore, I wish to create more security</p>
+
+      <p>This final project has 3 major modules, a camera as mentioned before, a sensor to detect when someone opens or closes a door, and a card reader so that I do not trigger the alarm every time I wake into the room myself</p>
+      
+      <p>The first module I would like to talk about is the sensor, it works using a magnet and a hall effect sensor</p>
+
+      
+
+      <p><b>What is a Hall Effect Sensor?</b></p>
+
+      <img src ="./halleffectimg.png" class="center">
+
+      <p>To put it simply, a Hall effect sensor is one which detects a change in a magnetic field and sends an electronic signal on detection of this change</p>
+      <p>I can trigger this sensor by simply attaching a magnet to the door which opens and just simply calibrating the sensor so that it can detect when the door opens and closes</p>
+      <p>To test it out, I initially coded it to say "Intruder Alert" wheneever it detects a change, and later, I coded it to change a variable on open and closure of the door so that it can keep track and then send said alarm</p>
+      <p>The circuit for the diagram is below</p>
+
+      <p>This is a video of the sensor giving me the "intruder alert" on detection of change in the magnetic field</p>
+
+      <video width="640" height="480" controls>
+        <source src="./IMG_1120.mp4" type="video/mp4">
+      </video>
+
+      <p>If you wish to read more about Hall Effect Sensors, use the links below</p>
+
+      <p><a href ="url">https://www.electronics-tutorials.ws/electromagnetism/hall-effect.html</a></p>
+      <p><a href="url">https://www.explainthatstuff.com/hall-effect-sensors.html</a></p>
+
+      <p><b>What is an RFID scanner</b></p>
+
+      <p>RFID stands for Radio Frequency Identity, It uses electromagnetic fields to transfer data over short distances. It is useful to identify people, to make transactions, etc.</p>
+      <p>You can use an RFID system to open a door. For example, only the person with the right information on his card is allowed to enter. An RFID system uses:<p></p>
+
+      <p>tags attached to the object to be identified, in this example we have a keychain and an electromagnetic card. Each tag has his own identification (UID)  tags</p>
+
+      <p>two-way radio transmitter-receiver, the reader, that send a signal to the tag and read its response</p>
+
+      <p><i>Source : <a href = "url">https://randomnerdtutorials.com/security-access-using-mfrc522-rfid-reader-with-arduino/</a></i></p>
+
+      <p>I used the code provided by randomnerdtutorials and then modified it to my liking to use in my final project</p>
+
+      <p>The video below shows testing of the RFID scanner</p>
+      
+      <video width="640" height="480" controls>
+        <source src="./IMG_1117.mp4" type="video/mp4">
+      </video>
+
+      <p>If you want to read more into RFID scanners, use the links below</p>
+
+      <p><a href ="url">https://www.abr.com/what-is-rfid-how-does-rfid-work/</a></p>
+      <p><a href ="url">https://electronics.howstuffworks.com/gadgets/high-tech-gadgets/rfid.html</a></p>
+
+      <p><b>ESP-32 CAM</b></p>
+
+      <p>Since people generally know what a camera is, I'm not going to go through the basics of a camera, but the point of using an ESP-32 camera is that an ESP-32 is a wifi enabled board that can stream data onto a site over a wireless connection therefore making it a lot easier to use</p>
+      <p>The ESP-32 comes in quite handy for me as I can access this over a live server and I can make a website to control this quite easily</p>
+      <p>To use the ESP-32 CAM, use this randomnerdtutorials link as it was extremely handy for me when wiring the ESP32-CAM</p>
+      <p><a href="url">https://randomnerdtutorials.com/?s=esp32-cam</a></p>
+    </body>
   
   </html>
